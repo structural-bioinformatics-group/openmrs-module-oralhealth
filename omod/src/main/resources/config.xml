@@ -25,7 +25,11 @@
 		<point>org.openmrs.admin.list</point>
 		<class>${project.parent.groupId}.${project.parent.artifactId}.extension.html.AdminList</class>
 	</extension>
-	
+	<extension>
+    	<point>org.openmrs.patientDashboardTab</point>
+    	<class>org.openmrs.module.${project.parent.artifactId}.extension.html.OralHealthTab</class>
+	</extension>
+
 	<!-- Maps hibernate file's, if present -->
 	<mappingFiles>
 				
